@@ -1,9 +1,9 @@
 import streamlit as st
-import joblib
+import pickle
 import numpy as np
 
 # Load the saved model
-model = joblib.load('linear_reg.sav')
+model = pickle.load(open('linear_reg.sav', 'rb'))
 
 st.title('Sales Prediction App')
 
